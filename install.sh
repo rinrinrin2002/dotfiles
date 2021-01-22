@@ -17,8 +17,4 @@ if [ "$1" = "init" ]; then
   if type brew &>/dev/null; then
     brew doctor && brew bundle
   fi
-
-  if type nvm &>/dev/null; then
-    nvm install --lts
-  fi
 fi
