@@ -23,7 +23,7 @@ zinit wait lucid light-mode for \
   supercrabtree/k
 
 zinit wait lucid is-snippet for \
-  atinit"export NVM_DIR=\"$HOME\"/.nvm" \
+  atinit"export NVM_DIR=\"$HOME/.nvm\"" \
     /usr/local/opt/nvm/nvm.sh
 
 zinit light-mode for \
