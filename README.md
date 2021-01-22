@@ -1,7 +1,7 @@
 # dotfiles
 
 ```bash
-git clone https://github.com/rinrinrin2002/dotfiles.git
-cd dotfiles
-./install.sh init
+cd ~
+git clone https://github.com/rinrinrin2002/dotfiles
+dotfiles/install.sh init
 ```
