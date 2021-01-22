@@ -17,7 +17,7 @@ zinit wait lucid light-mode for \
     zdharma/fast-syntax-highlighting \
   atload"_zsh_autosuggest_start" \
     zsh-users/zsh-autosuggestions \
-  blockf atpull'zinit creinstall -q .' \
+  blockf atpull"zinit creinstall -q ." \
     zsh-users/zsh-completions \
   zdharma/history-search-multi-word \
   supercrabtree/k
