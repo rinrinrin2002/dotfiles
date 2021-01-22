@@ -17,4 +17,9 @@ if [ "$1" = "init" ]; then
   if type brew &>/dev/null; then
     brew doctor && brew bundle
   fi
+
+  if type gh &>/dev/null; then
+    gh auth login && \
+      gh repo clone proprietary-software "$HOME/proprietary-software"
+  fi
 fi
