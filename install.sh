@@ -19,6 +19,7 @@ if [ "$1" = "init" ]; then
   fi
 
   if type gh &>/dev/null; then
+    gh repo clone OpenCore-B75-Pro3-M "$HOME/OpenCore-B75-Pro3-M"
     gh auth login && \
       gh repo clone proprietary-software "$HOME/proprietary-software"
   fi
