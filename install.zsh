@@ -23,6 +23,7 @@ if [[ $1 == init ]]; then
   if type gh &>/dev/null; then
     gh repo clone rinrinrin2002/OpenCore-B75-Pro3-M
     gh auth login && \
-      gh repo clone rinrinrin2002/proprietary-software
+      gh repo clone rinrinrin2002/dotfiles-private && \
+        /bin/zsh dotfiles-private/download.zsh
   fi
 fi
