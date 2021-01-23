@@ -21,6 +21,7 @@ cask "onyx"
 cask "qlmarkdown"
 cask "qlstephen"
 cask "raspberry-pi-imager"
+cask "sdformatter"
 cask "steam"
 cask "visual-studio-code"
 mas "Affinity Designer", id: 824171161
