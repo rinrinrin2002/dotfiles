@@ -31,6 +31,7 @@ if [[ $1 == init ]]; then
         printf '\e[33m%s\e[m' 'Which device do you want to install OpenCore on(ex. "disk0")? '
         read device
         sudo diskutil mount /dev/"$device"s1 && {
+            rm -rf /Volumes/EFI/*
             cp -Rv OpenCore-B75-Pro3-M/EFI /Volumes/EFI
             cp -Rv OpenCore-B75-Pro3-M/Utilities /Volumes/EFI
           }
