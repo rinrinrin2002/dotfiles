@@ -1,41 +1,31 @@
 #!/bin/zsh
 
-DOTFILES=$(cd $(dirname "$0"); pwd)
+DOTFILES="${HOME}/.dotfiles"
 
-for file in "$DOTFILES"/.??*; do
-  filename=$(basename "$file")
+: "Sign in to the App Store" && () {
+  printf "\033[33m%s\033[m" "Press Enter to sign in to the App Store first."
+  read
+  open -a "/System/Applications/App Store.app"
+  printf "\n\033[33m%s\033[m" "Press Enter to continue..."
+  read
+}
 
-  [[ $filename == .DS_Store ]] && continue
-  [[ $filename == .git ]] && continue
-  
-  ln -snfv "$DOTFILES/$filename" "$HOME/$filename"
-done
-
-if [[ $1 == init ]]; then
-  if ! type brew &>/dev/null; then
-    printf '\e[32m\n\n%s\n\n\e[m' '> Install Homebrew'
+: "Install Homebrew" && () {
+  printf "\n\n\033[32m%s\033[m\n" "> Install Homebrew"
+  if type brew &>/dev/null; then
+    printf "\033[33m%s\033[m\n" "Homebrew is already installed."
+  else
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    brew doctor && brew bundle --global
   fi
+}
 
-  if type gh &>/dev/null; then
-    printf '\e[32m\n\n%s\n\n\e[m' '> Download Proprietary Software'
-    gh auth login && \
-      gh repo clone rinrinrin2002/dotfiles-private && \
-        /bin/zsh dotfiles-private/download.zsh
+: "Clone the repo from GitHub" && () {
+  printf "\n\n\033[32m%s\033[m\n" "> github.com/rinrinrin2002/dotfiles -> ~/.dotfiles"
+  git clone https://github.com/rinrinrin2002/dotfiles ${DOTFILES}
+}
 
-    printf '\e[32m\n\n%s\n\n\e[m' '> Download OpenCore'
-    gh repo clone rinrinrin2002/OpenCore-B75-Pro3-M && {
-        printf '\e[32m\n\n%s\n\n\e[m' '> Install OpenCore'
-        diskutil list internal physical
-        printf '\e[33m%s\e[m' 'Which device do you want to install OpenCore on(ex. "disk0")? '
-        read device
-        sudo diskutil mount /dev/"$device"s1 && {
-            rm -rf /Volumes/EFI/*
-            cp -Rv OpenCore-B75-Pro3-M/EFI /Volumes/EFI
-            cp -Rv OpenCore-B75-Pro3-M/Utilities /Volumes/EFI
-          }
-        diskutil unmount /dev/"$device"s1
-      }
-  fi
-fi
+zsh "${DOTFILES}/scripts/symlink.zsh"
+zsh "${DOTFILES}/scripts/bundle.zsh"
+zsh "${DOTFILES}/scripts/opencore.zsh"
+
+printf "\n\n\033[32m%s\033[m\n" "Done!"
