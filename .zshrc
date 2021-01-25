@@ -24,7 +24,7 @@ zinit wait lucid light-mode for \
 
 zinit wait lucid is-snippet for \
   atinit"export NVM_DIR=\"$HOME/.nvm\"" \
-    "$(brew --prefix)/opt/nvm/nvm.sh"
+    /usr/local/opt/nvm/nvm.sh
 
 zinit light-mode for \
   pick"async.zsh" src"pure.zsh" \
