@@ -24,10 +24,10 @@ zinit wait lucid light-mode for \
 
 zinit wait lucid is-snippet for \
   atinit"export NVM_DIR=\"$HOME/.nvm\"" \
-    /usr/local/opt/nvm/nvm.sh
+    "$(brew --prefix)/opt/nvm/nvm.sh"
 
 zinit light-mode for \
   pick"async.zsh" src"pure.zsh" \
     sindresorhus/pure
 
-export EDITOR=/usr/local/bin/code
+export EDITOR="/usr/local/bin/code"
