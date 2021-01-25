@@ -24,8 +24,8 @@ DOTFILES="${HOME}/.dotfiles"
   git clone https://github.com/rinrinrin2002/dotfiles ${DOTFILES}
 }
 
-zsh "${DOTFILES}/scripts/symlink.zsh"
-zsh "${DOTFILES}/scripts/bundle.zsh"
-zsh "${DOTFILES}/scripts/opencore.zsh"
+/bin/zsh "${DOTFILES}/scripts/symlink.zsh"
+/bin/zsh "${DOTFILES}/scripts/bundle.zsh"
+/bin/zsh "${DOTFILES}/scripts/opencore.zsh"
 
 printf "\n\n\033[32m%s\033[m\n" "Done!"

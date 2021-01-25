@@ -1,7 +1,5 @@
 # dotfiles
 
-```bash
-cd ~
-git clone https://github.com/rinrinrin2002/dotfiles
-dotfiles/install.zsh init
+```zsh
+/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/rinrinrin2002/dotfiles/master/install.zsh)"
 ```
