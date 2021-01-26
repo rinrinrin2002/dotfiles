@@ -26,7 +26,7 @@ DOTFILES="${HOME}/.dotfiles"
 
 /bin/zsh "${DOTFILES}/scripts/symlink.zsh"
 /bin/zsh "${DOTFILES}/scripts/bundle.zsh"
-/bin/zsh "${DOTFILES}/scripts/environment.zsh"
+/bin/zsh "${DOTFILES}/scripts/misc.zsh"
 /bin/zsh "${DOTFILES}/scripts/opencore.zsh"
 
 printf "\n\n\033[32m%s\033[m\n" "Done!"

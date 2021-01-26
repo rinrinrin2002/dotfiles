@@ -9,6 +9,7 @@ for f in ${DOTFILES}/.??*; do
 
   [[ ${filename} == .DS_Store ]] && continue
   [[ ${filename} == .git ]] && continue
+  [[ ${filename} == .gitignore ]] && continue
   
   ln -snfv "${DOTFILES}/${filename}" "${HOME}/${filename}"
 done
