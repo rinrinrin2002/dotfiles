@@ -30,4 +30,5 @@ zinit light-mode for \
   pick"async.zsh" src"pure.zsh" \
     sindresorhus/pure
 
+export PATH="/usr/local/bin:$PATH"
 export EDITOR="/usr/local/bin/code"
