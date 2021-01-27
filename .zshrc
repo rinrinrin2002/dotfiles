@@ -32,3 +32,4 @@ zinit light-mode for \
 
 export PATH="/usr/local/bin:$PATH"
 export EDITOR="/usr/local/bin/code"
+export GPG_TTY=$(tty)
