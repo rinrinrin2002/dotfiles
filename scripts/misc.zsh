@@ -24,7 +24,7 @@ echo
 echo
 
 : "Configure GnuPG and import PGP keys" && () {
-  echo "pinentry-program /usr/local/bin/pinentry-mac" >> "${HOME}/.gnupg/gpg-agent.conf"
+  echo "pinentry-program /usr/local/bin/pinentry-mac" > "${HOME}/.gnupg/gpg-agent.conf"
   gpg-connect-agent reloadagent /bye
 
   keybase login
