@@ -40,8 +40,6 @@ mas "Final Cut Pro", id: 424389933
 mas "Keka", id: 470158793
 mas "Logic Pro", id: 634148309
 mas "Microsoft Excel", id: 462058435
-mas "Microsoft OneNote", id: 784801555
 mas "Microsoft Outlook", id: 985367838
-mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Word", id: 462054704
 mas "OneDrive", id: 823766827
