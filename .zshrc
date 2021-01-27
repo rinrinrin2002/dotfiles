@@ -23,13 +23,13 @@ zinit wait lucid light-mode for \
   supercrabtree/k
 
 zinit wait lucid is-snippet for \
-  atinit"export NVM_DIR=\"$HOME/.nvm\"" \
+  atinit"export NVM_DIR=\"${HOME}/.nvm\"" \
     /usr/local/opt/nvm/nvm.sh
 
 zinit light-mode for \
   pick"async.zsh" src"pure.zsh" \
     sindresorhus/pure
 
-export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/bin:${PATH}"
 export EDITOR="/usr/local/bin/code"
 export GPG_TTY=$(tty)
