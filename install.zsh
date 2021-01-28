@@ -26,6 +26,7 @@ DOTFILES="${HOME}/.dotfiles"
 
 /bin/zsh "${DOTFILES}/scripts/symlink.zsh"
 /bin/zsh "${DOTFILES}/scripts/bundle.zsh"
+/bin/zsh "${DOTFILES}/scripts/git.zsh"
 /bin/zsh "${DOTFILES}/scripts/misc.zsh"
 /bin/zsh "${DOTFILES}/scripts/opencore.zsh"
 
