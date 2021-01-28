@@ -9,4 +9,6 @@ keybase login
 keybase pgp export | gpg --import
 keybase pgp export -s | gpg --import
 
+echo
+
 gh auth login
