@@ -1,5 +1,5 @@
 # dotfiles
 
 ```zsh
-zsh -c "$(curl -fsSL i.rinrin.me)"
+zsh -c "$(curl -fsSL dotfiles.rinrin.me)"
 ```
