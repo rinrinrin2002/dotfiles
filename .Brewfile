@@ -10,6 +10,7 @@ brew "mas"
 brew "nvm"
 brew "pinentry-mac"
 brew "python@3.9"
+brew "wimlib"
 brew "rinrinrin4046/tap/reset-launchpad"
 cask "ampero-editor"
 cask "android-studio"
@@ -40,7 +41,4 @@ mas "Compressor", id: 424390742
 mas "Final Cut Pro", id: 424389933
 mas "Keka", id: 470158793
 mas "Logic Pro", id: 634148309
-mas "Microsoft Excel", id: 462058435
-mas "Microsoft Outlook", id: 985367838
-mas "Microsoft Word", id: 462054704
 mas "OneDrive", id: 823766827
