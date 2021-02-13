@@ -33,3 +33,8 @@ zinit light-mode for \
 export PATH="/usr/local/bin:${PATH}"
 export EDITOR="/usr/local/bin/code"
 export GPG_TTY=$(tty)
+
+export JAVA_HOME="/Applications/Android Studio.app/Contents/jre/jdk/Contents/Home"
+export ANDROID_SDK_ROOT="/Users/rin/Library/Android/sdk"
+export PATH="${ANDROID_SDK_ROOT}/emulator:${ANDROID_SDK_ROOT}/tools:${PATH}"
+export PATH="${ANDROID_SDK_ROOT}/build-tools/30.0.3:${PATH}"
