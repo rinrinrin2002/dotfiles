@@ -9,8 +9,8 @@ if [[ ${(L)install:-n} == y ]]; then
   printf "\n\033[32m%s\033[m\n" "> Install OpenCore"
   git clone https://github.com/rinrinrin4046/OpenCore-B75-Pro3-M ${OPENCORE}
   echo
-  diskutil list internal physical
-  printf "\033[33m%s\033[m" "Device name (ex. \"disk0\"): "
+  diskutil list physical
+  printf "\033[33m%s\033[m" "Disk identifier (ex. \"disk0\"): "
   read device
 
   sudo diskutil mount "/dev/${device}s1" && {
