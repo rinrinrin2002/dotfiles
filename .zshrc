@@ -22,10 +22,6 @@ zinit wait lucid light-mode for \
   zdharma/history-search-multi-word \
   supercrabtree/k
 
-zinit wait lucid is-snippet for \
-  atinit"export NVM_DIR=\"${HOME}/.nvm\"" \
-    /usr/local/opt/nvm/nvm.sh
-
 zinit light-mode for \
   pick"async.zsh" src"pure.zsh" \
     sindresorhus/pure
@@ -33,8 +29,5 @@ zinit light-mode for \
 export PATH="/usr/local/bin:${PATH}"
 export EDITOR="/usr/local/bin/code"
 export GPG_TTY=$(tty)
-
-export JAVA_HOME="/Applications/Android Studio.app/Contents/jre/jdk/Contents/Home"
-export ANDROID_SDK_ROOT="/Users/rin/Library/Android/sdk"
-export PATH="${ANDROID_SDK_ROOT}/emulator:${ANDROID_SDK_ROOT}/tools:${PATH}"
-export PATH="${ANDROID_SDK_ROOT}/build-tools/30.0.3:${PATH}"
+export NVM_DIR="${HOME}/.nvm"
+source "/usr/local/opt/nvm/nvm.sh"

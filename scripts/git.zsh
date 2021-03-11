@@ -2,7 +2,6 @@
 
 printf "\n\n\033[32m%s\033[m\n" "> Configure Git"
 
-export GPG_TTY=$(tty)
 keybase login
 keybase pgp export | gpg --import
 keybase pgp export -s | gpg --import
