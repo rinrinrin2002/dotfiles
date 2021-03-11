@@ -28,6 +28,7 @@ cask "propertree"
 cask "qlmarkdown"
 cask "qlstephen"
 cask "sdformatter"
+cask "setdefaultmailapp"
 cask "totalfinder"
 cask "visual-studio-code"
 cask "vmware-fusion"
@@ -35,6 +36,7 @@ mas "Affinity Designer", id: 824171161
 mas "Affinity Photo", id: 824183456
 mas "BetterSnapTool", id: 417375580
 mas "Compressor", id: 424390742
+mas "DaVinci Resolve", id: 571213070
 mas "Final Cut Pro", id: 424389933
 mas "Keka", id: 470158793
 mas "Logic Pro", id: 634148309
