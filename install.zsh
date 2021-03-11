@@ -24,11 +24,11 @@ DOTFILES="${HOME}/.dotfiles"
   git clone https://github.com/rinrinrin4046/dotfiles ${DOTFILES}
 }
 
-/bin/zsh "${DOTFILES}/scripts/symlink.zsh"
+source "${DOTFILES}/scripts/symlink.zsh"
 source "${HOME}/.zshrc"
-/bin/zsh "${DOTFILES}/scripts/bundle.zsh"
-/bin/zsh "${DOTFILES}/scripts/git.zsh"
-/bin/zsh "${DOTFILES}/scripts/misc.zsh"
-/bin/zsh "${DOTFILES}/scripts/opencore.zsh"
+source "${DOTFILES}/scripts/bundle.zsh"
+source "${DOTFILES}/scripts/git.zsh"
+source "${DOTFILES}/scripts/misc.zsh"
+source "${DOTFILES}/scripts/opencore.zsh"
 
 printf "\n\n\033[32m%s\033[m\n" "Done!"
