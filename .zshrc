@@ -26,6 +26,7 @@ zinit light-mode for \
   pick"async.zsh" src"pure.zsh" \
     sindresorhus/pure
 
+export DOTFILES="${HOME}/.dotfiles"
 export PATH="/usr/local/bin:${PATH}"
 export EDITOR="/usr/local/bin/code"
 export GPG_TTY=$(tty)

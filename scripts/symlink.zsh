@@ -1,7 +1,5 @@
 #!/bin/zsh
 
-DOTFILES="${HOME}/.dotfiles"
-
 printf "\n\n\033[32m%s\033[m\n" "> Create symlinks"
 
 for f in ${DOTFILES}/.??*; do
@@ -10,6 +8,6 @@ for f in ${DOTFILES}/.??*; do
   [[ ${filename} == .DS_Store ]] && continue
   [[ ${filename} == .git ]] && continue
   [[ ${filename} == .gitignore ]] && continue
-  
+
   ln -snfv "${DOTFILES}/${filename}" "${HOME}/${filename}"
 done
