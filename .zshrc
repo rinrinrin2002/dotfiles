@@ -31,4 +31,4 @@ export PATH="/usr/local/bin:${PATH}"
 export EDITOR="/usr/local/bin/code"
 export GPG_TTY=$(tty)
 export NVM_DIR="${HOME}/.nvm"
-source "/usr/local/opt/nvm/nvm.sh"
+source "$(brew --prefix nvm)/nvm.sh"

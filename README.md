@@ -1,7 +1,7 @@
-# dotfiles-x64
+# dotfiles
 
 ```zsh
-zsh -c "$(curl -fsSL https://rinrin.me/dotfiles-x64)"
+zsh -c "$(curl -fsSL https://rinrin.me/dotfiles)"
 ```
 
 ## Note

@@ -32,6 +32,7 @@ cask "setdefaultmailapp"
 cask "totalfinder"
 cask "visual-studio-code"
 cask "vmware-fusion"
+cask "witgui"
 mas "Affinity Designer", id: 824171161
 mas "Affinity Photo", id: 824183456
 mas "BetterSnapTool", id: 417375580
