@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-DOTFILES="${HOME}/.dotfiles"
+export DOTFILES="${HOME}/.dotfiles"
 
 : "Sign in to the App Store" && () {
   printf "\033[33m%s\033[m" "Press Enter to sign in to the App Store first."
@@ -29,6 +29,5 @@ source "${HOME}/.zshrc"
 source "${DOTFILES}/scripts/bundle.zsh"
 source "${DOTFILES}/scripts/git.zsh"
 source "${DOTFILES}/scripts/misc.zsh"
-source "${DOTFILES}/scripts/opencore.zsh"
 
 printf "\n\n\033[32m%s\033[m\n" "Done!"
