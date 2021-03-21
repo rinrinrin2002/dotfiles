@@ -27,8 +27,9 @@ zinit light-mode for \
     sindresorhus/pure
 
 export DOTFILES="${HOME}/.dotfiles"
-export PATH="/usr/local/bin:${PATH}"
-export EDITOR="/usr/local/bin/code"
+export EDITOR="code"
 export GPG_TTY=$(tty)
 export NVM_DIR="${HOME}/.nvm"
-source "$(brew --prefix nvm)/nvm.sh"
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+source "/opt/homebrew/opt/nvm/nvm.sh"

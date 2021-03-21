@@ -14,5 +14,6 @@ printf "\n\n\033[32m%s\033[m\n" "> Miscellaneous"
 echo
 
 : "Install Node.js" && () {
-  nvm install --lts
+  source "/opt/homebrew/opt/nvm/nvm.sh"
+  nvm install node
 }
