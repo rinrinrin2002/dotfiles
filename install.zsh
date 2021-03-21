@@ -12,11 +12,7 @@ export DOTFILES="${HOME}/.dotfiles"
 
 : "Install Homebrew" && () {
   printf "\n\n\033[32m%s\033[m\n" "> Install Homebrew"
-  if type brew &>/dev/null; then
-    printf "\033[33m%s\033[m\n" "Homebrew is already installed."
-  else
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-  fi
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 }
 
 : "Clone the repo from GitHub" && () {
