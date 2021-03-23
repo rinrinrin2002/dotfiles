@@ -14,6 +14,7 @@ echo
 
 : "Install software from the Brewfile" && () {
   sudo softwareupdate --install-rosetta
+  eval "$(/opt/homebrew/bin/brew shellenv)"
   brew doctor
   brew bundle --global
 }
