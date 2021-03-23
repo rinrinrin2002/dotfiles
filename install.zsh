@@ -23,6 +23,7 @@ export DOTFILES="${HOME}/.dotfiles"
 source "${DOTFILES}/scripts/symlink.zsh"
 source "${HOME}/.zshrc"
 source "${DOTFILES}/scripts/bundle.zsh"
+source "${DOTFILES}/scripts/git.zsh"
 source "${DOTFILES}/scripts/misc.zsh"
 
 printf "\n\n\033[32m%s\033[m\n" "Done!"

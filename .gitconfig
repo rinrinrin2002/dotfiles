@@ -1,5 +1,8 @@
 [user]
 	name = rinrinrin4046
 	email = rin@rinrin.me
+	signingkey = BEC004DEE7620DD6
 [core]
 	excludesfile = /Users/rin/.gitignore_global
+[commit]
+	gpgsign = true
