@@ -2,16 +2,8 @@
 
 DOTFILES="${HOME}/.dotfiles"
 
-: "Sign in to the App Store" && () {
-  printf "\033[33m%s\033[m" "Press Enter to sign in to the App Store first."
-  read
-  open -a "/System/Applications/App Store.app"
-  printf "\n\033[33m%s\033[m" "Press Enter to continue..."
-  read
-}
-
 : "Install Homebrew" && () {
-  printf "\n\n\033[32m%s\033[m\n" "> Install Homebrew"
+  printf "\033[32m%s\033[m\n" "> Install Homebrew"
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 }
 
@@ -20,10 +12,9 @@ DOTFILES="${HOME}/.dotfiles"
   git clone https://github.com/rinrinrin4046/dotfiles ${DOTFILES}
 }
 
-source "${DOTFILES}/scripts/symlink.zsh"
-source "${HOME}/.zshrc"
-source "${DOTFILES}/scripts/bundle.zsh"
-source "${DOTFILES}/scripts/git.zsh"
-source "${DOTFILES}/scripts/misc.zsh"
+zsh "${DOTFILES}/scripts/symlink.zsh"
+zsh "${DOTFILES}/scripts/bundle.zsh"
+zsh "${DOTFILES}/scripts/git.zsh"
+zsh "${DOTFILES}/scripts/misc.zsh"
 
 printf "\n\n\033[32m%s\033[m\n" "Done!"

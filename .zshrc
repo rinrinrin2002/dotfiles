@@ -25,10 +25,3 @@ zinit wait lucid light-mode for \
 zinit light-mode for \
   pick"async.zsh" src"pure.zsh" \
     sindresorhus/pure
-
-export EDITOR="code"
-export GPG_TTY=$(tty)
-export NVM_DIR="${HOME}/.nvm"
-
-eval "$(/opt/homebrew/bin/brew shellenv)"
-source "/opt/homebrew/opt/nvm/nvm.sh"
