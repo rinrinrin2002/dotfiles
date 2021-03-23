@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+DOTFILES="${HOME}/.dotfiles"
+
 printf "\n\n\033[32m%s\033[m\n" "> Miscellaneous"
 
 : "Hard link to the wallpaper" && () {

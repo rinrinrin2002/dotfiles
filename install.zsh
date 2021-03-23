@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-export DOTFILES="${HOME}/.dotfiles"
+DOTFILES="${HOME}/.dotfiles"
 
 : "Sign in to the App Store" && () {
   printf "\033[33m%s\033[m" "Press Enter to sign in to the App Store first."
