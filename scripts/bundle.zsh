@@ -13,7 +13,7 @@ printf "\n\n\033[32m%s\033[m\n" "> Install software"
 echo
 
 : "Install software" && () {
-  brew doctor
   sudo softwareupdate --install-rosetta
+  brew doctor
   brew bundle --global
 }
