@@ -14,7 +14,6 @@ DOTFILES="${HOME}/.dotfiles"
 
 zsh "${DOTFILES}/scripts/symlink.zsh"
 zsh "${DOTFILES}/scripts/bundle.zsh"
-zsh "${DOTFILES}/scripts/git.zsh"
 zsh "${DOTFILES}/scripts/misc.zsh"
 
 printf "\n\n\033[32m%s\033[m\n" "Done!"
