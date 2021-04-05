@@ -16,6 +16,8 @@ cask "iterm2"
 cask "keepingyouawake"
 cask "kekaexternalhelper"
 cask "setdefaultmailapp"
+cask "steermouse"
+cask "syncroom"
 cask "visual-studio-code"
 mas "Affinity Designer", id: 824171161
 mas "Affinity Photo", id: 824183456

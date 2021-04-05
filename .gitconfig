@@ -3,5 +3,3 @@
 	email = rin@rinrin.me
 [core]
 	excludesfile = /Users/rin/.gitignore_global
-[commit]
-	gpgsign = true
