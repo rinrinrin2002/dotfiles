@@ -1,7 +1,10 @@
+tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "rinrinrin4046/tap"
+brew "python@3.9"
+brew "ffmpeg"
 brew "gcc"
 brew "gh"
 brew "gibo"
@@ -9,12 +12,14 @@ brew "go"
 brew "hugo"
 brew "mas"
 brew "nvm"
-brew "python@3.9"
 brew "smartmontools"
+brew "youtube-dl"
+brew "heroku/brew/heroku"
 brew "rinrinrin4046/tap/reset-launchpad"
 cask "ampero-editor"
-cask "android-studio"
 cask "appcleaner"
+cask "audacity"
+cask "audacity-ffmpeg"
 cask "blackhole-16ch"
 cask "discord"
 cask "docker"
@@ -23,7 +28,6 @@ cask "google-chrome"
 cask "iterm2"
 cask "keepingyouawake"
 cask "kekaexternalhelper"
-cask "parallels"
 cask "raspberry-pi-imager"
 cask "setdefaultmailapp"
 cask "steermouse"
@@ -36,5 +40,7 @@ mas "Compressor", id: 424390742
 mas "Final Cut Pro", id: 424389933
 mas "Keka", id: 470158793
 mas "Logic Pro", id: 634148309
+mas "Microsoft PowerPoint", id: 462062816
+mas "Microsoft Word", id: 462054704
 mas "OneDrive", id: 823766827
 mas "Spark", id: 1176895641
