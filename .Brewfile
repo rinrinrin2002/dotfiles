@@ -10,6 +10,7 @@ brew "go"
 brew "hugo"
 brew "mas"
 brew "nvm"
+brew "python-tk@3.9"
 brew "smartmontools"
 brew "heroku/brew/heroku"
 brew "rinrinrin4046/tap/reset-launchpad"
@@ -26,6 +27,7 @@ cask "iterm2"
 cask "karabiner-elements"
 cask "keepingyouawake"
 cask "kekaexternalhelper"
+cask "kindle"
 cask "onyx"
 cask "raspberry-pi-imager"
 cask "sdformatter"
@@ -39,6 +41,7 @@ mas "Compressor", id: 424390742
 mas "Final Cut Pro", id: 424389933
 mas "Keka", id: 470158793
 mas "Logic Pro", id: 634148309
+mas "Microsoft Excel", id: 462058435
 mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Word", id: 462054704
 mas "OneDrive", id: 823766827
