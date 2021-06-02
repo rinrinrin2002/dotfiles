@@ -25,5 +25,3 @@ zinit wait lucid light-mode for \
 zinit light-mode for \
   pick"async.zsh" src"pure.zsh" \
     sindresorhus/pure
-
-alias g++='g++-10'
