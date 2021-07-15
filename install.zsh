@@ -9,7 +9,7 @@ DOTFILES="${HOME}/.dotfiles"
 
 : "Clone the repo from GitHub" && () {
   printf "\n\n\033[32m%s\033[m\n" "> github.com/rinrinrin4046/dotfiles -> ~/.dotfiles"
-  git clone https://github.com/rinrinrin4046/dotfiles ${DOTFILES}
+  git clone https://github.com/rin4046/dotfiles ${DOTFILES}
 }
 
 zsh "${DOTFILES}/scripts/symlink.zsh"
